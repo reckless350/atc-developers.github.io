@@ -1,0 +1,7 @@
+.main-background {
+  background-image: radial-gradient(rgb(66, 66, 175), rgb(16, 6, 79));
+}
+
+.card.horizontal .card-image {
+    max-width: 300px;
+}

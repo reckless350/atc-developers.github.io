@@ -1,8 +1,57 @@
 <html>
-    <head>
-        <title>ATC Developers</title>
-    </head>
-    <body>
-        <h1>Hello, World !</h1>
-        </body>
+   <head>
+      <title>ATC Developers</title>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="./main.css">
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script
+         src="https://code.jquery.com/jquery-3.4.1.min.js"
+         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+         crossorigin="anonymous"></script>
+   </head>
+   <body class="main-background">
+      <div class="black-text" id="main-body">
+      </div>
+   </body>
+   <script>
+      //
+      //
+      // CHANGE HERE
+      //
+      //
+      const data = [{
+      	'name': 'Shashank Sharma',
+      	'message': 'This internet is flooded with cats !',
+      	'image_url': 'https://media.giphy.com/media/BSx6mzbW1ew7K/giphy.gif'
+      },
+      {
+      	'name': 'Swarup Hegde',
+      	'message': 'Catto Everywhere !',
+      	'image_url': 'https://media3.giphy.com/media/72DtXz1K8PTOw/source.gif'
+      }]
+      //
+      //
+      //
+      //
+      //
+      
+      data.forEach(function (profile) {
+      	console.log(profile);
+      $('#main-body').append(`<div class="card horizontal" style="margin: 30px;">
+      	<div class="card-image">
+      <img src="${profile.image_url}">
+      </div>
+      <div class="card-stacked">
+      <div class="card-content">
+       <h4>${profile.name}</h4>
+       <span>${profile.message}</span>
+      </div>
+      </div>
+      </div>
+      
+      	`);
+      });
+   </script>
 </html>
